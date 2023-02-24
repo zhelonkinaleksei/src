@@ -37,10 +37,13 @@ export function filePreview(){
   const clearFile = document.querySelector('.clearfile');
   const previewFiles = document.getElementById('previewfiles');
   const inputFiles = document.getElementById('breefattach');
+  const sizeCounter = document.querySelector('.counter-size__current')
 
   clearFile.addEventListener('click',function(){
+    const inNull = 0;
     previewFiles.innerHTML = '';
     inputFiles.value = '';
+    sizeCounter.innerHTML = inNull;
 
   });
 

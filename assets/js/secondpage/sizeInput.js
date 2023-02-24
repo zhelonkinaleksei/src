@@ -1,4 +1,6 @@
-export function sizeInput(){
+export let fileInputs = document.getElementById('breefattach');
+fileInputs.addEventListener('change', sizeInput);
+function sizeInput() {
     const counterSize = document.querySelector('.counter-size__current');
     const filesSize = document.querySelector('.input__attach-standart');
     const sumSize = filesSize.files[0];
@@ -8,4 +10,4 @@ export function sizeInput(){
     } else{
         counterSize.innerText = size.toFixed(2);
     };
-  }
+}
